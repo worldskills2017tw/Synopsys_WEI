@@ -27,6 +27,8 @@ int main(int argc, char* argv[])
 	//send RAW image out via SPI master
 	if(hx_drv_spim_send(pimg_config.raw_address, pimg_config.raw_size, SPI_TYPE_RAW) != HX_DRV_LIB_PASS)
 */
+	hx_drv_uart_print("Wait for user press key: [A] \n");
+	
 	while (1) 
 	{
 		hx_drv_uart_getchar(&key_data);
