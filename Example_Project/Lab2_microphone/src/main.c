@@ -58,6 +58,7 @@ int main(int argc, char* argv[])
 		hx_drv_uart_getchar(&key_data);
 		if(key_data == 'A')
 		{			
+			hx_drv_uart_print("Start Record Audio\n");
 			for(int record_cnt = 0; record_cnt < aud_stamp_cnt; record_cnt ++)
 			{
 				while(time_cur == time_prev) 
